@@ -3,8 +3,12 @@ import { IoDocumentsOutline } from "react-icons/io5";
 import { IoBuildOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { DarkModeContext } from "../context/theme-context";
+import { useContext } from "react";
 
 const Services = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   const { ref, inView } = useInView({
     triggerOnce: true, // Animation triggers only once
     threshold: 0.5, // When 50% of the element is visible
@@ -17,9 +21,9 @@ const Services = () => {
           <p className="text-PrimaryBlue text-2xl font-bold mb-3 text-center sm:text-left">
             What I do
           </p>
-          <h3 className="text-3xl sm:text-4xl font-bold text-white mb-3 underline decoration-PrimaryBlue underline-offset-8 text-center sm:text-left">
-            My Services
-          </h3>
+          <h3 className={`text-${darkMode ? 'white' : 'slate-700'} text-3xl sm:text-4xl font-bold mb-12 underline decoration-PrimaryBlue underline-offset-8 text-center sm:text-left `}>
+          My Services
+        </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
@@ -30,10 +34,10 @@ const Services = () => {
             transition={{ duration: 1 }}
           >
             <FaCode className="text-PrimaryBlue text-6xl text-center sm:text-left" />
-            <h4 className="text-2xl text-white font-bold text-center sm:text-left">
+            <h4 className={`text-${darkMode ? 'white' : 'slate-700'} text-2xl font-bold text-center sm:text-left`}>
               Frontend Development
             </h4>
-            <p className="text-lg sm:text-xl text-lighterText text-center sm:text-left">
+            <p className={`text-${darkMode ? 'lighterText' : 'slate-500'} text-lg sm:text-xl text-center sm:text-left`}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
               nihil in ipsa numquam minus facilis dolorum eaque laudantium
               deserunt impedit.
@@ -47,10 +51,10 @@ const Services = () => {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <IoBuildOutline className="text-PrimaryBlue text-6xl text-center sm:text-left" />
-            <h4 className="text-2xl text-white font-bold text-center sm:text-left">
+            <h4 className={`text-${darkMode ? 'white' : 'slate-700'} text-2xl font-bold text-center sm:text-left`}>
               Frontend Development
             </h4>
-            <p className="text-lg sm:text-xl text-lighterText text-center sm:text-left">
+            <p className={`text-${darkMode ? 'lighterText' : 'slate-500'} text-lg sm:text-xl text-center sm:text-left`}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
               nihil in ipsa numquam minus facilis dolorum eaque laudantium
               deserunt impedit.
@@ -64,10 +68,10 @@ const Services = () => {
             transition={{ duration: 1, delay: 0.4 }}
           >
             <IoDocumentsOutline className="text-PrimaryBlue text-6xl text-center sm:text-left" />
-            <h4 className="text-2xl text-white font-bold text-center sm:text-left">
+            <h4 className={`text-${darkMode ? 'white' : 'slate-700'} text-2xl font-bold text-center sm:text-left`}>
               Frontend Development
             </h4>
-            <p className="text-lg sm:text-xl text-lighterText text-center sm:text-left">
+            <p className={`text-${darkMode ? 'lighterText' : 'slate-500'} text-lg sm:text-xl text-center sm:text-left`}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
               nihil in ipsa numquam minus facilis dolorum eaque laudantium
               deserunt impedit.

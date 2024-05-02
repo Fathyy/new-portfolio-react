@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import profileImage from "../assets/profileImage.png";
+import { DarkModeContext } from "../context/theme-context";
+import { useContext } from "react";
 
 const About = () => {
+  const { darkMode } = useContext(DarkModeContext);
   const { ref, inView } = useInView({
-    triggerOnce: false, // Change this to false if you want the animation to trigger again whenever it comes in view.
+    triggerOnce: false, 
   });
 
   return (
@@ -33,10 +36,10 @@ const About = () => {
         <p className="text-PrimaryBlue text-2xl font-bold mb-3 text-center sm:text-left">
           Discover
         </p>
-        <h3 className="text-3xl sm:text-4xl font-bold text-white mb-3 underline decoration-PrimaryBlue underline-offset-8 text-center sm:text-left">
+        <h3 className={`text-${darkMode ? 'white' : 'slate-700'} text-3xl sm:text-4xl font-bold mb-12 underline decoration-PrimaryBlue underline-offset-8 text-center sm:text-left `}>
           About Me
         </h3>
-        <p className="text-lighterText text-lg sm:text-xl text-center sm:text-left">
+        <p className={`text-${darkMode ? 'lighterText' : 'slate-500'} text-lg sm:text-xl text-center sm:text-left`}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
           temporibus animi eos! Eius error laboriosam distinctio blanditiis
           porro quia maiores tempore iure culpa? Quas, incidunt deserunt.

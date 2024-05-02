@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { About, Footer, Hero, Mywork, Navbar, Services } from "./Components";
+import { DarkModeContext } from "./context/theme-context";
 
 function App() {
+  const { darkMode } = useContext(DarkModeContext);
   return (
     <div>
       <div className="relative h-screen bg-cover bg-[url('./assets/mountain.jpg')]">
@@ -12,22 +15,22 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-darkerBlack bg-cover">
+      <div className={darkMode ? "bg-darkerBlack bg-cover" : "bg-white bg-cover"}>
         <div className="container mx-auto px-6 sm:px-16">
           <About />
         </div>
       </div>
-      <div className="bg-lighterBlack">
+      <div  className={darkMode ? "bg-lighterBlack bg-cover" : "bg-white bg-cover"}>
         <div className="container mx-auto px-6 sm:px-16">
           <Services />
         </div>
       </div>
-      <div className="bg-darkerBlack bg-cover">
-        <div className="container mx-auto px-6 sm:px-16">
+      <div className={darkMode ? "bg-darkerBlack bg-cover" : "bg-white bg-cover"}>
+        <div className="container mx-auto px-6 sm:px-16"> 
           <Mywork />
         </div>
       </div>
-      <div className="bg-lighterBlack">
+      <div className="bg-lighterBlack bg-cover">
         <div className="container mx-auto px-6 sm:px-16">
           <Footer />
         </div>

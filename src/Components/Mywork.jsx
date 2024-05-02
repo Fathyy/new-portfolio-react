@@ -2,8 +2,13 @@ import WorkItem from "./WorkItem";
 import { workItems } from "../data";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { DarkModeContext } from "../context/theme-context";
+import { useContext } from "react";
+
 
 const Mywork = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   const { ref, inView } = useInView({
     triggerOnce: true, // Animation triggers only once
     threshold: 0.1, // When 10% of the element is visible
@@ -16,9 +21,9 @@ const Mywork = () => {
           <p className="text-PrimaryBlue text-2xl font-bold mb-3 text-center sm:text-left">
             What I have done so far
           </p>
-          <p className="text-3xl sm:text-4xl font-bold text-white mb-3 underline decoration-PrimaryBlue underline-offset-8 text-center sm:text-left">
+          <h3 className={`text-${darkMode ? 'white' : 'slate-700'} text-3xl sm:text-4xl font-bold mb-12 underline decoration-PrimaryBlue underline-offset-8 text-center sm:text-left `}>
             My Work
-          </p>
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
