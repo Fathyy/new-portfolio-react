@@ -27,13 +27,13 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-          <motion.div className="border border-PrimaryBlue p-10 space-y-4"
+          <motion.div className="border border-PrimaryBlue p-10 space-y-4 flex flex-col"
             ref={ref}
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: inView ? 0 : 200, opacity: inView ? 1 : 0 }}
             transition={{ duration: 1 }}
           >
-            <FaCode className="text-PrimaryBlue text-6xl text-center sm:text-left" />
+            <FaCode className="text-PrimaryBlue text-6xl self-center sm:text-left" />
             <h4 className={`text-${darkMode ? 'white' : 'slate-700'} text-2xl font-bold text-center sm:text-left`}>
               Frontend Development
             </h4>
@@ -44,15 +44,15 @@ const Services = () => {
             </p>
           </motion.div>
 
-          <motion.div className="border border-PrimaryBlue p-10 space-y-4"
+          <motion.div className="border border-PrimaryBlue p-10 space-y-4 flex flex-col"
             ref={ref}
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: inView ? 0 : 200, opacity: inView ? 1 : 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <IoBuildOutline className="text-PrimaryBlue text-6xl text-center sm:text-left" />
+            <IoBuildOutline className="text-PrimaryBlue text-6xl self-center sm:text-left" />
             <h4 className={`text-${darkMode ? 'white' : 'slate-700'} text-2xl font-bold text-center sm:text-left`}>
-              Frontend Development
+              UI/UX Skills
             </h4>
             <p className={`text-${darkMode ? 'lighterText' : 'slate-500'} text-lg sm:text-xl text-center sm:text-left`}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
@@ -61,15 +61,15 @@ const Services = () => {
             </p>
           </motion.div>
 
-          <motion.div className="border border-PrimaryBlue p-10 space-y-4"
+          <motion.div className="border border-PrimaryBlue p-10 space-y-4 flex flex-col"
             ref={ref}
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: inView ? 0 : 200, opacity: inView ? 1 : 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            <IoDocumentsOutline className="text-PrimaryBlue text-6xl text-center sm:text-left" />
+            <IoDocumentsOutline className="text-PrimaryBlue text-6xl self-center sm:text-left" />
             <h4 className={`text-${darkMode ? 'white' : 'slate-700'} text-2xl font-bold text-center sm:text-left`}>
-              Frontend Development
+              Technical Writing
             </h4>
             <p className={`text-${darkMode ? 'lighterText' : 'slate-500'} text-lg sm:text-xl text-center sm:text-left`}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,

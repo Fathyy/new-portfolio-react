@@ -14,7 +14,8 @@ export default {
         PrimaryBlue: '#168fba',
         darkerBlack: '#1e2131',
         lighterBlack: '#22263a',
-        lighterText: '#c5c4c3'
+        lighterText: '#c5c4c3',
+        lightMode: '#00008B',  
       }
     },
   },

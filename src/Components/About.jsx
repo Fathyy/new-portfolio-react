@@ -7,8 +7,10 @@ import { useContext } from "react";
 const About = () => {
   const { darkMode } = useContext(DarkModeContext);
   const { ref, inView } = useInView({
-    triggerOnce: false, 
+    triggerOnce: false,
+    threshold: 0.1, // Adjust this value as needed
   });
+  
 
   return (
     <motion.div className="flex flex-col sm:flex-row justify-center gap-10 py-20 sm:py-32 sm:h-[800px]"

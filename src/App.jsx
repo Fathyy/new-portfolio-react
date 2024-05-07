@@ -1,6 +1,14 @@
 import { useContext } from "react";
-import { About, Footer, Hero, Mywork, Navbar, Services } from "./Components";
+import { About, Footer, Hero, Mywork, Navbar, Services, Technologies } from "./Components";
 import { DarkModeContext } from "./context/theme-context";
+
+const COLORS = {
+  light: 'lightMode',
+  dark: {
+    lighter: 'lighterBlack',
+    darker: 'darkerBlack',
+  },
+};
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -15,17 +23,22 @@ function App() {
         </div>
       </div>
 
-      <div className={darkMode ? "bg-darkerBlack bg-cover" : "bg-white bg-cover"}>
+      <div className={`bg-${darkMode ? COLORS.dark.lighter : COLORS.light} bg-cover`}>
         <div className="container mx-auto px-6 sm:px-16">
           <About />
         </div>
       </div>
-      <div  className={darkMode ? "bg-lighterBlack bg-cover" : "bg-white bg-cover"}>
+      <div className={`bg-${darkMode ? COLORS.dark.darker : COLORS.light} bg-cover`}>
+        <div className="container mx-auto px-6 sm:px-16">
+          <Technologies/>
+        </div>
+      </div>
+      <div className={`bg-${darkMode ? COLORS.dark.lighter : COLORS.light} bg-cover`}>
         <div className="container mx-auto px-6 sm:px-16">
           <Services />
         </div>
       </div>
-      <div className={darkMode ? "bg-darkerBlack bg-cover" : "bg-white bg-cover"}>
+      <div className={`bg-${darkMode ? COLORS.dark.darker : COLORS.light} bg-cover`}>
         <div className="container mx-auto px-6 sm:px-16"> 
           <Mywork />
         </div>
