@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import { About, Footer, Hero, Mywork, Navbar, Services, Technologies } from "./Components";
 import { DarkModeContext } from "./context/theme-context";
+import { About, Footer, Hero, Mywork, Navbar, Services, Technologies } from "./Components";
+
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -20,7 +21,7 @@ function App() {
           <About />
         </div>
       </div>
-      <div className={`${darkMode ? 'bg-darkerBlack' : 'bg-lighterGrey'} bg-cover`}>
+      <div className={`${darkMode ? 'bg-lighterBlack' : 'bg-lighterGrey'} bg-cover`}>
         <div className="container mx-auto px-6 sm:px-16">
           <Technologies/>
         </div>
@@ -30,12 +31,12 @@ function App() {
           <Services />
         </div>
       </div>
-      <div className={`${darkMode ? 'bg-darkerBlack' : 'bg-lighterGrey'} bg-cover`}>
+      <div className={`${darkMode ? 'bg-lighterBlack' : 'bg-lighterGrey'} bg-cover`}>
         <div className="container mx-auto px-6 sm:px-16"> 
           <Mywork />
         </div>
       </div>
-      <div className="bg-lighterBlack bg-cover">
+      <div className="bg-darkerBlack bg-cover">
         <div className="container mx-auto px-6 sm:px-16">
           <Footer />
         </div>

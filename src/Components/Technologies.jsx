@@ -29,7 +29,7 @@ const Technologies = () => {
       <div>
         <h3
           className={`text-${
-            darkMode ? "white" : "slate-700"
+            darkMode ? "white" : "lighterBlack"
           } text-3xl sm:text-4xl font-bold mb-12 underline decoration-PrimaryBlue underline-offset-8 text-center`}
         >
           Technologies
@@ -46,7 +46,7 @@ const Technologies = () => {
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className={`${darkMode ? 'border-neutral-800' : 'border-neutral-500'} rounded-2xl border-4  p-4`}
         >
           <FaReact className="text-[#61DAFB] text-7xl" />
         </motion.div>
@@ -54,7 +54,7 @@ const Technologies = () => {
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className={`${darkMode ? 'border-neutral-800' : 'border-neutral-500'} rounded-2xl border-4  p-4`}
         >
           <SiTailwindcss className="text-[#38B2AC] text-7xl" />
         </motion.div>
@@ -62,7 +62,7 @@ const Technologies = () => {
           variants={iconVariants(5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className={`${darkMode ? 'border-neutral-800' : 'border-neutral-500'} rounded-2xl border-4  p-4`}
         >
           <FaBootstrap className="text-[#7952B3] text-7xl" />
         </motion.div>
@@ -70,7 +70,7 @@ const Technologies = () => {
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className={`${darkMode ? 'border-neutral-800' : 'border-neutral-500'} rounded-2xl border-4  p-4`}
         >
           <FaPhp className="text-[#777BB4] text-7xl" />
         </motion.div>
@@ -78,7 +78,7 @@ const Technologies = () => {
           variants={iconVariants(6)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className={`${darkMode ? 'border-neutral-800' : 'border-neutral-500'} rounded-2xl border-4  p-4`}
         >
           <FaCss3Alt className="text-[#1572B6] text-7xl" />
         </motion.div>
@@ -86,7 +86,7 @@ const Technologies = () => {
           variants={iconVariants(4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className={`${darkMode ? 'border-neutral-800' : 'border-neutral-500'} rounded-2xl border-4  p-4`}
         >
           <GrMysql className="text-[#4479A1] text-7xl" />
         </motion.div>

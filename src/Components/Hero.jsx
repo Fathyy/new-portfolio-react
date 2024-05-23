@@ -1,5 +1,7 @@
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { DarkModeContext } from "../context/theme-context";
 
 const textVariants = {
   initial: {
@@ -16,13 +18,14 @@ const textVariants = {
   },
 }
 const Hero = () => {
+  const { darkMode } = useContext(DarkModeContext);
   return (
     <div className="flex items-center justify-center mt-[14rem]">
       <motion.div variants={textVariants} initial="initial" animate="animate">
       <motion.h1 variants={textVariants} className="text-white text-center text-4xl sm:text-5xl mb-6">
         Hi, I am <span className="text-PrimaryBlue">Fathi Abdi</span>
       </motion.h1>
-      <motion.p variants={textVariants} className="text-lighterText text-center text-xl">
+      <motion.p variants={textVariants} className={`${darkMode ? 'text-lighterText' : 'text-white'} text-center text-xl`}>
         I am a frontend Developer with one year experience <br /> developing
         applications using React and Tailwind CSS
       </motion.p>

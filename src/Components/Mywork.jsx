@@ -25,7 +25,7 @@ const Mywork = () => {
           <p className="text-PrimaryBlue text-2xl font-bold mb-3 text-center sm:text-left">
             What I have done so far
           </p>
-          <h3 className={`text-${darkMode ? 'white' : 'slate-700'} text-3xl sm:text-4xl font-bold mb-12 underline decoration-PrimaryBlue underline-offset-8 text-center sm:text-left `}>
+          <h3 className={`text-${darkMode ? 'white' : 'lighterBlack'} text-3xl sm:text-4xl font-bold mb-12 underline decoration-PrimaryBlue underline-offset-8 text-center sm:text-left `}>
             My Work
           </h3>
         </div>
