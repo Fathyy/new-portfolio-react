@@ -6,6 +6,7 @@ import myImage from './myImage.jpeg';
 import profileImage from './profileImage.png';
 import fineDining from './fineDining.png';
 import cryptoImage from './cryptoImage.png';
+import esg from './esg.png';
 
 export {
     aiImage,
@@ -15,5 +16,6 @@ export {
     myImage,
     profileImage,
     fineDining,
-    cryptoImage
+    cryptoImage,
+    esg
 }

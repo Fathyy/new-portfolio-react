@@ -3,16 +3,20 @@ import { workItems } from "../data";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { DarkModeContext } from "../context/theme-context";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 
 const Mywork = () => {
   const { darkMode } = useContext(DarkModeContext);
+  const [showMore, setShowMore] = useState(false);
 
   const { ref, inView } = useInView({
-    triggerOnce: true, // Animation triggers only once
-    threshold: 0.1, // When 10% of the element is visible
+    triggerOnce: true,
+    threshold: 0.1,
   });
+
+  // Slice the workItems array based on showMore state
+  const displayedItems = showMore ? workItems : workItems.slice(0, 3);
 
   return (
     <div>
@@ -27,7 +31,7 @@ const Mywork = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-          {workItems.map((item, index) => (
+          {displayedItems.map((item, index) => (
             <motion.div
               ref={ref}
               key={index}
@@ -41,9 +45,12 @@ const Mywork = () => {
 
         </div>
         <div className="flex justify-center items-center">
-          <button className="px-6 py-3 bg-PrimaryBlue outline-none border-none text-white font-bold mt-7">
-            SHOW MORE
-          </button>
+        <button
+          className="px-6 py-3 bg-PrimaryBlue outline-none border-none text-white font-bold mt-7"
+          onClick={() => setShowMore(!showMore)} 
+        >
+          {showMore ? "SHOW LESS" : "SHOW MORE"}
+        </button>
         </div>
       </div>
     </div>
