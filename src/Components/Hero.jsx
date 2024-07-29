@@ -26,8 +26,8 @@ const Hero = () => {
         Hi, I am <span className="text-PrimaryBlue">Fathi Abdi</span>
       </motion.h1>
       <motion.p variants={textVariants} className={`${darkMode ? 'text-lighterText' : 'text-white'} text-center text-xl`}>
-        I am a frontend Developer with one year experience <br /> developing
-        applications using React and Tailwind CSS
+        I am a web Developer with one year experience <br /> developing robust
+        applications.
       </motion.p>
 
       <motion.div className="flex items-center justify-center gap-5 mt-6">

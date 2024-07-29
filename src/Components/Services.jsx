@@ -18,10 +18,10 @@ const Services = () => {
     <div>
       <div className="py-20 sm:py-32">
         <div className="">
-          <p className="text-PrimaryBlue text-2xl font-bold mb-3 text-center sm:text-left">
+          <p className="text-PrimaryBlue text-2xl font-bold mb-3 text-center">
             What I do
           </p>
-          <h3 className={`text-${darkMode ? 'white' : 'lighterBlack'} text-3xl sm:text-4xl font-bold mb-12 underline decoration-PrimaryBlue underline-offset-8 text-center sm:text-left `}>
+          <h3 className={`text-${darkMode ? 'white' : 'lighterBlack'} text-3xl sm:text-4xl font-bold mb-12 underline decoration-PrimaryBlue underline-offset-8 text-center `}>
           My Services
         </h3>
         </div>

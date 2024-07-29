@@ -50,15 +50,14 @@ const About = () => {
         <p
           className={`text-${
             darkMode ? "lighterText" : "slate-500"
-          } text-lg sm:text-xl text-center sm:text-left`}
+          } text-base sm:text-xl text-center sm:text-left`}
         >
-          Hello, I am a skilled front-end developer skilled at making good
-          looking UI, responsive websites and modern looking websites. My
-          proficiency spans a diverse range of programming and design
-          technologies, including React, Tailwind, MUI, Bootstrap, and
-          PHP. These tools are the foundation of my work, enabling me to create
-          innovative digital solutions that seamlessly blend functionality with
-          aesthetics.
+          I am a web developer skilled in building websites and web applications
+          using React, Next.js, WordPress, and Node.js. I specialize in creating
+          robust, high-performance full-stack applications that follow best
+          practices. If you have a project in mind, I'd love to work on it with
+          you. Feel free to reach out! Currently, I'm also learning SEO
+          techniques to help websites rank better in search engines.
         </p>
         <div className="flex items-center sm:items-start justify-center sm:justify-start mt-8">
           <button className="px-6 py-3 sm:px-12 sm:py-6 bg-PrimaryBlue outline-none border-none text-white font-bold">
