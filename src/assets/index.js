@@ -3,7 +3,6 @@ import close from './close.svg';
 import menu from './menu.svg';
 import mountain from './mountain.jpg';
 import myImage from './myImage.jpeg';
-import profileImage from './profileImage.png';
 import fineDining from './fineDining.png';
 import cryptoImage from './cryptoImage.png';
 import esg from './esg.png';
@@ -12,6 +11,7 @@ import cleaningWebsite from './cleaningWebsite.png';
 import nextjsPortfolio from './nextjsPortfolio.png';
 import frontendPower from './frontendPower.png';
 import developerBot from './developerBot.png';
+import nextjsFoofie from './nextjsFoofie.png';
 
 export {
     aiImage,
@@ -19,7 +19,6 @@ export {
     menu,
     mountain, 
     myImage,
-    profileImage,
     fineDining,
     cryptoImage,
     esg,
@@ -27,5 +26,6 @@ export {
     cleaningWebsite,
     nextjsPortfolio,
     frontendPower,
-    developerBot
+    developerBot,
+    nextjsFoofie
 }

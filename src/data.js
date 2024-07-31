@@ -1,4 +1,4 @@
-import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower } from "./assets";
+import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie } from "./assets";
 
 export const workItems = [
     {
@@ -73,6 +73,15 @@ export const workItems = [
         technology: ['Nextjs', 'Tailwind'],
         category: 'nextjs',
         link: 'https://next-portfolio-practice-phi.vercel.app/'
+    },
+    {
+        id: 12,
+        image: nextjsFoofie,
+        heading: 'NextLevel Foodie',
+        description: 'This project features dynamic routing and modular CSS styling, integrated with an SQLite database for efficient data management.',
+        technology: ['Nextjs', 'SQLite'],
+        category: 'nextjs',
+        link: 'https://nextjs-foodies-project-ro66.vercel.app/'
     }
 ]
 
