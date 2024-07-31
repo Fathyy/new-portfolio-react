@@ -22,7 +22,7 @@ const MyWork = () => {
   const displayedItems = showMore ? filteredWorkItems : filteredWorkItems.slice(0, 3);
 
   return (
-    <div id="MyWork">
+    <div id="myWork">
       <div className="py-20 sm:py-32">
         <div className="">
           <p className="text-PrimaryBlue text-2xl font-bold mb-3 text-center">

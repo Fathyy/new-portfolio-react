@@ -90,8 +90,8 @@ export const navLinks = [
       title: "Services",
     },
     {
-      id: "my Work",
-      title: "MyWork",
+      id: "myWork",
+      title: "My Work",
     },
     {
       id: "contact",
