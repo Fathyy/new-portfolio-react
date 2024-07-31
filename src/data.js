@@ -75,3 +75,26 @@ export const workItems = [
         link: 'https://next-portfolio-practice-phi.vercel.app/'
     }
 ]
+
+export const navLinks = [
+    {
+      id: "home",
+      title: "Home",
+    },
+    {
+      id: "about",
+      title: "About",
+    },
+    {
+      id: "services",
+      title: "Services",
+    },
+    {
+      id: "my Work",
+      title: "MyWork",
+    },
+    {
+      id: "contact",
+      title: "Contact",
+    },
+  ];

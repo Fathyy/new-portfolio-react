@@ -11,6 +11,7 @@ import bankApp from './bankApp.png';
 import cleaningWebsite from './cleaningWebsite.png';
 import nextjsPortfolio from './nextjsPortfolio.png';
 import frontendPower from './frontendPower.png';
+import developerBot from './developerBot.png';
 
 export {
     aiImage,
@@ -25,5 +26,6 @@ export {
     bankApp,
     cleaningWebsite,
     nextjsPortfolio,
-    frontendPower
+    frontendPower,
+    developerBot
 }

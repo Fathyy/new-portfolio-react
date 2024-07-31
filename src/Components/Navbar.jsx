@@ -3,6 +3,7 @@ import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import { IoMdMoon, IoMdSunny } from "react-icons/io";
 import { DarkModeContext } from "../context/theme-context";
+import { navLinks } from "../data";
 
 const Navbar = () => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
@@ -15,45 +16,28 @@ const Navbar = () => {
       </div>
       <div className="">
         <ul className="hidden sm:flex gap-4 uppercase text-xl">
-          <li
-            className="text-white font-bold
+          {navLinks.map((nav, index) => (
+            <li
+              key={nav.id}
+              className={`
+                text-white
+           font-bold
           cursor-pointer
-          text-[16px]"
-          >
-            Home
-          </li>
-          <li
-            className="text-white font-bold
-          cursor-pointer
-          text-[16px]"
-          >
-            About
-          </li>
-          <li
-            className="text-white font-bold
-          cursor-pointer
-          text-[16px]"
-          >
-            Services
-          </li>
-          <li
-            className="text-white font-bold
-          cursor-pointer
-          text-[16px]"
-          >
-            My Work
-          </li>
-          <li
-            className="text-white font-bold
-          cursor-pointer
-          text-[16px]"
-          >
-            Contact
-          </li>
+          text-[16px]
+          ${index === navLinks.length - 1 ? "mr-0" : "mr-4"}
+          `}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
 
           {/* Dark mode toggle button */}
           <button type="button" onClick={toggleDarkMode} className="text-3xl">
-            {darkMode ? <IoMdSunny style={{color: '#168fba'}} /> : <IoMdMoon style={{color: '#168fba'}} />}
+            {darkMode ? (
+              <IoMdSunny style={{ color: "#168fba" }} />
+            ) : (
+              <IoMdMoon style={{ color: "#168fba" }} />
+            )}
           </button>
         </ul>
       </div>
@@ -73,41 +57,19 @@ const Navbar = () => {
         mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
-            <li
-              className="text-white font-bold
+            {navLinks.map((nav, index) => (
+              <li
+                key={nav.id}
+                className={`
+          text-white font-bold
           cursor-pointer
-          text-[16px] mb-4"
-            >
-              Home
-            </li>
-            <li
-              className="text-white font-bold
-          cursor-pointer
-          text-[16px] mb-4"
-            >
-              About
-            </li>
-            <li
-              className="text-white font-bold
-          cursor-pointer
-          text-[16px] mb-4"
-            >
-              Services
-            </li>
-            <li
-              className="text-white font-bold
-          cursor-pointer
-          text-[16px] mb-4"
-            >
-              My Work
-            </li>
-            <li
-              className="text-white font-bold
-          cursor-pointer
-          text-[16px] mb-4"
-            >
-              Contact
-            </li>
+          text-[16px]
+          ${index === navLinks.length - 1 ? "mr-0" : "mr-4"}
+          `}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

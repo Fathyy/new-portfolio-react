@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import myImage from "../assets/myImage.jpeg";
 import { DarkModeContext } from "../context/theme-context";
 import { useContext } from "react";
+import { developerBot } from "../assets";
 
 const About = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -14,6 +14,7 @@ const About = () => {
   return (
     <motion.div
       className="flex flex-col sm:flex-row justify-center gap-10 py-20 sm:py-32 sm:h-[800px]"
+      id="about"
       ref={ref}
       initial={{ opacity: 0 }}
       animate={{ opacity: inView ? 1 : 0 }}
@@ -26,7 +27,7 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <img
-          src={myImage}
+          src={developerBot}
           alt="my-profile"
           className="h-full w-full object-cover rounded-[50%]"
         />
