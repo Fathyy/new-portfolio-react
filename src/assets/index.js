@@ -10,6 +10,7 @@ import esg from './esg.png';
 import bankApp from './bankApp.png';
 import cleaningWebsite from './cleaningWebsite.png';
 import nextjsPortfolio from './nextjsPortfolio.png';
+import frontendPower from './frontendPower.png';
 
 export {
     aiImage,
@@ -23,5 +24,6 @@ export {
     esg,
     bankApp,
     cleaningWebsite,
-    nextjsPortfolio
+    nextjsPortfolio,
+    frontendPower
 }

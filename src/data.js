@@ -1,4 +1,4 @@
-import { aiImage, cryptoImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio } from "./assets";
+import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower } from "./assets";
 
 export const workItems = [
     {
@@ -49,7 +49,7 @@ export const workItems = [
     },
     {
         id: 9,
-        image: fineDining,
+        image: frontendPower,
         heading: 'Frontend Power',
         description: 'This is my personal blog created using Wordpress. I provide useful insights and tips about the latest trends in React',
         technology: ['WordPress', 'PHP'],
