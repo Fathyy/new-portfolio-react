@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { DarkModeContext } from "../context/theme-context";
+import { IoMdOpen } from "react-icons/io";
 
-const WorkItem = ({ image, heading, description, technology }) => {
+const WorkItem = ({ image, heading, description, technology, link }) => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
@@ -36,6 +37,12 @@ const WorkItem = ({ image, heading, description, technology }) => {
             {techItem}
           </span>
         ))}
+        <div className="flex gap-2 items-center text-PrimaryBlue text-lg underline underline-offset-4">
+          <button className="">
+            <a href={link} target="_blank">View Project</a>
+          </button>
+          <IoMdOpen />
+        </div>
       </div>
     </div>
   );

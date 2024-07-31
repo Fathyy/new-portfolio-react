@@ -7,6 +7,9 @@ import profileImage from './profileImage.png';
 import fineDining from './fineDining.png';
 import cryptoImage from './cryptoImage.png';
 import esg from './esg.png';
+import bankApp from './bankApp.png';
+import cleaningWebsite from './cleaningWebsite.png';
+import nextjsPortfolio from './nextjsPortfolio.png';
 
 export {
     aiImage,
@@ -17,5 +20,8 @@ export {
     profileImage,
     fineDining,
     cryptoImage,
-    esg
+    esg,
+    bankApp,
+    cleaningWebsite,
+    nextjsPortfolio
 }

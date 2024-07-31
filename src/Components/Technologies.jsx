@@ -94,37 +94,7 @@ const Technologies = () => {
           <GrMysql className="text-[#4479A1] text-7xl" />
         </motion.div>
 
-
-        {/* <motion.div
-          variants={iconVariants(4.5)}
-          initial="initial"
-          animate="animate"
-          className={`${
-            darkMode ? "border-neutral-800" : "border-neutral-500"
-          } rounded-2xl border-4 p-4`}
-        >
-          <FaWordpress className="text-[#21759B] text-7xl" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className={`${
-            darkMode ? "border-neutral-800" : "border-neutral-500"
-          } rounded-2xl border-4 p-4`}
-        >
-          <RiNextjsFill className="text-[#000000] text-7xl" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className={`${
-            darkMode ? "border-neutral-800" : "border-neutral-500"
-          } rounded-2xl border-4 p-4`}
-        >
-          <FaNodeJs className="text-[#339933] text-7xl" />
-        </motion.div> */}
+        
       </motion.div>
     </div>
   );

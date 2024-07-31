@@ -1,13 +1,15 @@
-import { aiImage, cryptoImage, fineDining, esg } from "./assets";
+import { aiImage, cryptoImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio } from "./assets";
 
 export const workItems = [
     {
         id: 1,
         image: esg,
         heading: 'Greenlead',
-        description: 'An ESG reporting application for companies who want to be environmentally conscious and responsible',
+        description: 'An ESG full stack reporting application for companies who want to be environmentally conscious and responsible',
         technology: ['React', 'Bootstrap', 'django', 'AWS'],
-        category: 'react'
+        category: 'react',
+        link: 'http://greenleadafrica.com/'
+
     },
     {
         id: 2,
@@ -15,7 +17,8 @@ export const workItems = [
         heading: 'AI website',
         description: 'This one page website was made using React and Tailwind CSS to create a stunning layout with gradient colors',
         technology: ['React', 'Tailwind'],
-        category: 'react'
+        category: 'react',
+        link: 'https://ai-landingpage-tm88.onrender.com/'
     },
     {
         id: 3,
@@ -23,55 +26,35 @@ export const workItems = [
         heading: 'Fine Dining',
         description: 'Created using React and Tailwind with beautiful blend of colors and textures to leave a lasting impression',
         technology: ['React', 'Tailwind'],
-        category: 'react'
+        category: 'react',
+        link: 'https://restaurant-fine.onrender.com/'
     },
     {
         id: 4,
-        image: cryptoImage,
-        heading: 'Crypto Image',
-        description: 'This one page website was made using React and Tailwind CSS to create a stunning layout with gradient colors',
-        technology: ['React', 'Ant Design'],
-        category: 'react'
-    },
-    {
-        id: 5,
-        image: cryptoImage,
-        heading: 'Crypto Image',
-        description: 'This one page website was made using React and Tailwind CSS to create a stunning layout with gradient colors',
-        technology: ['React', 'Ant Design'],
-        category: 'react'
-    },
-    {
-        id: 6,
-        image: cryptoImage,
-        heading: 'Crypto Image',
-        description: 'This one page website was made using React and Tailwind CSS to create a stunning layout with gradient colors',
-        technology: ['React', 'Ant Design'],
-        category: 'react'
-    },
-    {
-        id: 7,
-        image: cryptoImage,
-        heading: 'Crypto Image',
-        description: 'This one page website was made using React and Tailwind CSS to create a stunning layout with gradient colors',
-        technology: ['React', 'Ant Design'],
-        category: 'react'
+        image: cleaningWebsite,
+        heading: 'Agro Cleaning',
+        description: 'I created a website for a client that showcases the various cleaning services he provides to his customers.',
+        technology: ['React', 'Tailwind'],
+        category: 'react',
+        link: 'https://agrocleaning.com/'
     },
     {
         id: 8,
-        image: fineDining,
-        heading: 'Next.js Project',
-        description: 'A project built with Next.js to demonstrate server-side rendering and static site generation.',
-        technology: ['Next.js', 'CSS'],
-        category: 'nextjs'
+        image: bankApp,
+        heading: 'Bank Website',
+        description: 'This is a static bank website I created to hone my React and Tailwind skills and it is responsive.',
+        technology: ['React', 'Tailwind'],
+        category: 'react',
+        link: 'https://bank-app-one.onrender.com/'
     },
     {
         id: 9,
         image: fineDining,
-        heading: 'WordPress Blog',
-        description: 'A custom WordPress theme designed for a personal blog with enhanced SEO features.',
+        heading: 'Frontend Power',
+        description: 'This is my personal blog created using Wordpress. I provide useful insights and tips about the latest trends in React',
         technology: ['WordPress', 'PHP'],
-        category: 'wordpress'
+        category: 'wordpress',
+        link: 'https://frontendpower.com/'
     },
     {
         id: 10,
@@ -79,6 +62,16 @@ export const workItems = [
         heading: 'Node.js API',
         description: 'A RESTful API built using Node.js and Express, designed for a high-performance backend service.',
         technology: ['Node.js', 'Express'],
-        category: 'nodejs'
+        category: 'nodejs',
+        link: 'https://next-portfolio-practice-phi.vercel.app/'
+    },
+    {
+        id: 11,
+        image: nextjsPortfolio,
+        heading: 'Nextjs Portfolio',
+        description: 'An example portfolio built using Nextjs to explore the capabilities and functionality of the framework.',
+        technology: ['Nextjs', 'Tailwind'],
+        category: 'nextjs',
+        link: 'https://next-portfolio-practice-phi.vercel.app/'
     }
 ]

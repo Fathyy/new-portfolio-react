@@ -8,7 +8,7 @@ const About = () => {
   const { darkMode } = useContext(DarkModeContext);
   const { ref, inView } = useInView({
     triggerOnce: false,
-    threshold: 0.1, // Adjust this value as needed
+    threshold: 0.1,
   });
 
   return (
@@ -55,13 +55,13 @@ const About = () => {
           I am a web developer skilled in building websites and web applications
           using React, Next.js, WordPress, and Node.js. I specialize in creating
           robust, high-performance full-stack applications that follow best
-          practices. If you have a project in mind, I'd love to work on it with
-          you. Feel free to reach out! Currently, I'm also learning SEO
+          practices. If you have a project in mind, I wouldd love to work on it with
+          you. Feel free to reach out! Currently, I am also learning SEO
           techniques to help websites rank better in search engines.
         </p>
         <div className="flex items-center sm:items-start justify-center sm:justify-start mt-8">
           <button className="px-6 py-3 sm:px-12 sm:py-6 bg-PrimaryBlue outline-none border-none text-white font-bold">
-            DOWNLOAD CV
+            CONTACT ME
           </button>
         </div>
       </motion.div>
