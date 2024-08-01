@@ -12,6 +12,7 @@ import nextjsPortfolio from './nextjsPortfolio.png';
 import frontendPower from './frontendPower.png';
 import developerBot from './developerBot.png';
 import nextjsFoofie from './nextjsFoofie.png';
+import tourWebsite from './tourWebsite.png';
 
 export {
     aiImage,
@@ -27,5 +28,6 @@ export {
     nextjsPortfolio,
     frontendPower,
     developerBot,
-    nextjsFoofie
+    nextjsFoofie,
+    tourWebsite
 }

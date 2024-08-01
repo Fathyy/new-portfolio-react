@@ -1,4 +1,4 @@
-import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie } from "./assets";
+import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie, tourWebsite } from "./assets";
 
 export const workItems = [
     {
@@ -49,6 +49,15 @@ export const workItems = [
     },
     {
         id: 9,
+        image: tourWebsite,
+        heading: 'Travel website',
+        description: 'Visually pleasing travel website created using React and Tailwind css',
+        technology: ['React', 'Tailwind'],
+        category: 'react',
+        link: 'https://react-tour-website.vercel.app/'
+    },
+    {
+        id: 10,
         image: frontendPower,
         heading: 'Frontend Power',
         description: 'This is my personal blog created using Wordpress. I provide useful insights and tips about the latest trends in React',
@@ -57,7 +66,7 @@ export const workItems = [
         link: 'https://frontendpower.com/'
     },
     {
-        id: 10,
+        id: 11,
         image: fineDining,
         heading: 'Node.js API',
         description: 'A RESTful API built using Node.js and Express, designed for a high-performance backend service.',
@@ -66,7 +75,7 @@ export const workItems = [
         link: 'https://next-portfolio-practice-phi.vercel.app/'
     },
     {
-        id: 11,
+        id: 12,
         image: nextjsPortfolio,
         heading: 'Nextjs Portfolio',
         description: 'An example portfolio built using Nextjs to explore the capabilities and functionality of the framework.',
@@ -75,7 +84,7 @@ export const workItems = [
         link: 'https://next-portfolio-practice-phi.vercel.app/'
     },
     {
-        id: 12,
+        id: 13,
         image: nextjsFoofie,
         heading: 'NextLevel Foodie',
         description: 'This project features dynamic routing and modular CSS styling, integrated with an SQLite database for efficient data management.',
