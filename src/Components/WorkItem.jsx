@@ -6,7 +6,6 @@ const WorkItem = ({ image, heading, description, technology, link }) => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div>
       <div
         className={`text-${
           darkMode ? "bg-lighterBlack" : ""
@@ -44,7 +43,6 @@ const WorkItem = ({ image, heading, description, technology, link }) => {
           <IoMdOpen />
         </div>
       </div>
-    </div>
   );
 };
 

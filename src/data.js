@@ -1,11 +1,11 @@
-import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie, tourWebsite } from "./assets";
+import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie, tourWebsite, mernExpenseTracker, mernBlog } from "./assets";
 
 export const workItems = [
     {
         id: 1,
         image: esg,
         heading: 'Greenlead',
-        description: 'An ESG full stack reporting application for companies who want to be environmentally conscious and responsible',
+        description: 'An ESG full stack reporting application for the disclosure of environmental, social and corporate governance data.',
         technology: ['React', 'Bootstrap', 'django', 'AWS'],
         category: 'react',
         link: 'http://greenleadafrica.com/'
@@ -67,12 +67,12 @@ export const workItems = [
     },
     {
         id: 11,
-        image: fineDining,
-        heading: 'Node.js API',
-        description: 'A RESTful API built using Node.js and Express, designed for a high-performance backend service.',
-        technology: ['Node.js', 'Express'],
+        image: mernBlog,
+        heading: 'Blog Application',
+        description: 'Mern blog application for writing new articles, commenting under posts and liking them. You can also perform crud operations',
+        technology: ['nodejs', 'Express js', 'MongoDB', 'React'],
         category: 'nodejs',
-        link: 'https://next-portfolio-practice-phi.vercel.app/'
+        link: 'https://mern-blog-b5go.onrender.com/'
     },
     {
         id: 12,
@@ -91,6 +91,15 @@ export const workItems = [
         technology: ['Nextjs', 'SQLite'],
         category: 'nextjs',
         link: 'https://nextjs-foodies-project-ro66.vercel.app/'
+    },
+    {
+        id: 14,
+        image: mernExpenseTracker,
+        heading: 'Expense Tracker',
+        description: 'A mern stack application for expense tracking through comparing your incomes and expenses',
+        technology: ['nodejs', 'Express js', 'MongoDB', 'React'],
+        category: 'nodejs',
+        link: 'https://mern-expense-tracker-1-5j9q.onrender.com/'
     }
 ]
 

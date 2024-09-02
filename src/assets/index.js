@@ -13,6 +13,9 @@ import frontendPower from './frontendPower.png';
 import developerBot from './developerBot.png';
 import nextjsFoofie from './nextjsFoofie.png';
 import tourWebsite from './tourWebsite.png';
+import mernExpenseTracker from './mernExpenseTracker.png';
+import mernBlog from './mernBlog.png';
+
 
 export {
     aiImage,
@@ -29,5 +32,7 @@ export {
     frontendPower,
     developerBot,
     nextjsFoofie,
-    tourWebsite
+    tourWebsite,
+    mernExpenseTracker,
+    mernBlog
 }
