@@ -1,4 +1,4 @@
-import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie, tourWebsite, mernExpenseTracker, mernBlog } from "./assets";
+import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie, tourWebsite, mernExpenseTracker, mernBlog, evogym, secondHandCouch } from "./assets";
 
 export const workItems = [
     {
@@ -100,6 +100,24 @@ export const workItems = [
         technology: ['nodejs', 'Express js', 'MongoDB', 'React'],
         category: 'nodejs',
         link: 'https://mern-expense-tracker-1-5j9q.onrender.com/'
+    },
+    {
+        id: 15,
+        image: evogym,
+        heading: 'Next.js Gym website',
+        description: 'A Next.js gym website showcasing fitness classes, training programs, and membership options for an active lifestyle.',
+        technology: ['Nextjs', 'Tailwind', 'TypeScript'],
+        category: 'nextjs',
+        link: 'https://nextjs-gym-typescript-b7h6.vercel.app/'
+    },
+    {
+        id: 16,
+        image: secondHandCouch,
+        heading: 'Second hand couches website',
+        description: 'A Next.js website showcasing second-hand couches, affordable deals, and stylish options for a cozy home.',
+        technology: ['Nextjs', 'Tailwind', 'TypeScript'],
+        category: 'nextjs',
+        link: 'https://second-hand-couches.vercel.app/'
     }
 ]
 

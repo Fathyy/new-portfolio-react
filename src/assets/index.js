@@ -15,7 +15,8 @@ import nextjsFoofie from './nextjsFoofie.png';
 import tourWebsite from './tourWebsite.png';
 import mernExpenseTracker from './mernExpenseTracker.png';
 import mernBlog from './mernBlog.png';
-
+import evogym from './evogym.png';
+import secondHandCouch from './secondHandCouch.png';
 
 export {
     aiImage,
@@ -34,5 +35,7 @@ export {
     nextjsFoofie,
     tourWebsite,
     mernExpenseTracker,
-    mernBlog
+    mernBlog,
+    evogym,
+    secondHandCouch
 }
