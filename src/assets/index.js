@@ -17,6 +17,7 @@ import mernExpenseTracker from './mernExpenseTracker.png';
 import mernBlog from './mernBlog.png';
 import evogym from './evogym.png';
 import secondHandCouch from './secondHandCouch.png';
+import whitespace from './whitespace.png';
 
 export {
     aiImage,
@@ -37,5 +38,6 @@ export {
     mernExpenseTracker,
     mernBlog,
     evogym,
-    secondHandCouch
+    secondHandCouch,
+    whitespace
 }

@@ -1,4 +1,4 @@
-import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie, tourWebsite, mernExpenseTracker, mernBlog, evogym, secondHandCouch } from "./assets";
+import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie, tourWebsite, mernExpenseTracker, mernBlog, evogym, secondHandCouch, whitespace } from "./assets";
 
 export const workItems = [
     {
@@ -118,6 +118,15 @@ export const workItems = [
         technology: ['Nextjs', 'Tailwind', 'TypeScript'],
         category: 'nextjs',
         link: 'https://second-hand-couches.vercel.app/'
+    },
+    {
+        id: 17,
+        image: whitespace,
+        heading: 'Project Management website',
+        description: 'A Next.js website showcasing project management tools, collaborative features, and efficient solutions for teams.',
+        technology: ['Nextjs', 'Tailwind', 'TypeScript'],
+        category: 'nextjs',
+        link: 'https://whitespace-neon.vercel.app/'
     }
 ]
 
