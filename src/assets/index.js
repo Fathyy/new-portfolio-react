@@ -18,6 +18,8 @@ import mernBlog from './mernBlog.png';
 import evogym from './evogym.png';
 import secondHandCouch from './secondHandCouch.png';
 import whitespace from './whitespace.png';
+import awsCCP from './awsCCP.png';
+import realestate from './realestate.png';
 
 export {
     aiImage,
@@ -39,5 +41,7 @@ export {
     mernBlog,
     evogym,
     secondHandCouch,
-    whitespace
+    whitespace,
+    awsCCP,
+    realestate
 }

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { DarkModeContext } from "../context/theme-context";
 import { useContext } from "react";
-import { developerBot } from "../assets";
+import { awsCCP, developerBot } from "../assets";
 
 const About = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -26,11 +26,17 @@ const About = () => {
         animate={{ y: inView ? 0 : 200, opacity: inView ? 1 : 0 }}
         transition={{ duration: 1 }}
       >
-        <img
-          src={developerBot}
-          alt="my-profile"
-          className="h-full w-full object-cover rounded-[50%]"
-        />
+        <a
+          href="https://www.credly.com/badges/0915ff34-eae5-4ee9-9aea-f543fcd28011/public_urlA" 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={awsCCP} 
+            alt="AWS Certified Cloud Practitioner"
+            className="rounded-lg shadow-lg transition-transform transform hover:scale-105"
+          />
+        </a>
       </motion.div>
       <motion.div
         className="flex-1"
@@ -53,12 +59,14 @@ const About = () => {
             darkMode ? "lighterText" : "slate-500"
           } text-base sm:text-xl text-center sm:text-left`}
         >
-          I am a web developer skilled in building websites and web applications
-          using React, Next.js, WordPress, and Node.js. I specialize in creating
-          robust, high-performance full-stack applications that follow best
-          practices. If you have a project in mind, I wouldd love to work on it with
-          you. Feel free to reach out! Currently, I am also learning SEO
-          techniques to help websites rank better in search engines.
+          In my current role as an implementation engineer, I test and support
+          enterprise financial applications, ensuring they run smoothly for
+          users. I also act as a bridge between developers and users, handling
+          queries and facilitating seamless communication for issue resolution.
+          Additionally, I am AWS Certified Cloud Practitioner (CCP), expanding
+          my knowledge in cloud computing and scalable infrastructure. If you
+          have a project in mind, I’d love to work on it with you. Feel free to
+          reach out!.
         </p>
         <div className="flex items-center sm:items-start justify-center sm:justify-start mt-8">
           <button className="px-6 py-3 sm:px-12 sm:py-6 bg-PrimaryBlue outline-none border-none text-white font-bold">

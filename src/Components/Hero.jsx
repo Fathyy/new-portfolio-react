@@ -21,7 +21,8 @@ const Hero = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
     <div className="flex items-center justify-center mt-[14rem]">
-      <motion.div variants={textVariants} initial="initial" animate="animate">
+      <motion.div variants={textVariants} initial="initial" animate="animate"
+       className="max-w-[600px] text-center">
         <motion.h1
           variants={textVariants}
           className="text-white text-center text-4xl sm:text-5xl mb-6"
@@ -34,8 +35,7 @@ const Hero = () => {
             darkMode ? "text-lighterText" : "text-white"
           } text-center text-xl`}
         >
-          I am a web Developer with one year experience <br /> developing robust
-          applications.
+          Hello! Nice to meet you. I am Fathi Abdi, a full-stack developer specializing in the MERN stack. I enjoy building dynamic and scalable web applications using React, Node.js, Express, and MongoDB, along with tools like Tailwind CSS, Shadcn, TypeScript, Firebase, and Redux to enhance performance and user experience.
         </motion.p>
 
         <motion.div className="flex items-center justify-center gap-5 mt-6">

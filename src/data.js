@@ -1,4 +1,4 @@
-import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie, tourWebsite, mernExpenseTracker, mernBlog, evogym, secondHandCouch, whitespace } from "./assets";
+import { aiImage, fineDining, esg, bankApp, cleaningWebsite, nextjsPortfolio, frontendPower, nextjsFoofie, tourWebsite, mernExpenseTracker, mernBlog, evogym, secondHandCouch, whitespace, realestate } from "./assets";
 
 export const workItems = [
     {
@@ -71,7 +71,7 @@ export const workItems = [
         heading: 'Blog Application',
         description: 'Mern blog application for writing new articles, commenting under posts and liking them. You can also perform crud operations',
         technology: ['nodejs', 'Express js', 'MongoDB', 'React'],
-        category: 'nodejs',
+        category: 'MERN',
         link: 'https://mern-blog-b5go.onrender.com/'
     },
     {
@@ -98,7 +98,7 @@ export const workItems = [
         heading: 'Expense Tracker',
         description: 'A mern stack application for expense tracking through comparing your incomes and expenses',
         technology: ['nodejs', 'Express js', 'MongoDB', 'React'],
-        category: 'nodejs',
+        category: 'MERN',
         link: 'https://mern-expense-tracker-1-5j9q.onrender.com/'
     },
     {
@@ -127,6 +127,15 @@ export const workItems = [
         technology: ['Nextjs', 'Tailwind', 'TypeScript'],
         category: 'nextjs',
         link: 'https://whitespace-neon.vercel.app/'
+    },
+    {
+        id: 18,
+        image: realestate,
+        heading: 'Real estate booking',
+        description: 'A MERN stack application for booking real estate listings with seamless user interactions.',
+        technology: ['nodejs', 'Express js', 'MongoDB', 'React'],
+        category: 'MERN',
+        link: 'https://mern-realestate-nvx3.onrender.com/'
     }
 ]
 
